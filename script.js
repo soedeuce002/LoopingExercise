@@ -16,7 +16,9 @@ let numbers = [ 1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6 ];
 */
 function getFourthNum(){
     // Your answer here:
+    return numbers [3];
 }
+
 
 /*
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
@@ -31,6 +33,8 @@ function smallNums(){
 */
 function addNums(){
     // Your answer here:
+   numbers.push(12, 99, 101);
+   return numbers;
 }
 
 
@@ -54,6 +58,8 @@ let film = {
 */
 function addBoxOffice(){
     // Your answer here:
+    film.boxoffice = 269061;
+    return film;
 }
 
 /*
@@ -61,6 +67,8 @@ function addBoxOffice(){
 */
 function addActor(){
     // Your answer here:
+    film.actors[3] = "Yukiko Shimazaki";
+    return film;
 }
 
 /*
@@ -68,6 +76,8 @@ function addActor(){
 */
 function getLosses(){
     // Your answer here:
+    let difference = film.boxoffice - film.budget;
+    return difference;
 }
 
 

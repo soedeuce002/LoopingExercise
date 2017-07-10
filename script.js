@@ -26,6 +26,11 @@ function getFourthNum(){
 function smallNums(){
     let smallNums = [];
     // Your answer here:
+    for(let i = 0; i < numbers.length; i++){
+      if (numbers[i] < 10){
+        smallNums.push(numbers[i]);
+      }
+    } return smallNums;
 }
 
 /*
@@ -97,7 +102,14 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+    for(let i = 0; i < numberVals.length; i++){
+      vals.push(letterVals[i] + numberVals[i])
+    } return vals;
 }
+//for loop to iterate over both variable arrays
+//Concatenate values from each array
+//store the concatenated values in the vals variable
+//return vals
 
 
 
@@ -114,4 +126,12 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
+    for(let i = 0; i < first.length; i++){
+      if (first[i] == second[i]){
+        same.push(first[i])
+      }
+    } return same;
 }
+
+// loop over each array
+//
